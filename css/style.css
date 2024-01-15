@@ -1,3 +1,4 @@
+/*헤더 css*/
 header .header {
   padding: 31px 0 31px 0;
 }
@@ -36,4 +37,27 @@ header {
   color: #FFFFFF;
   padding: 15px 30px;
   margin-left: 50px;
+}
+
+/*main_visul css*/
+.main_visual{
+  background-color:#F2E9D8;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sns_area{
+  list-style: none;
+  display: flex;
+  margin-right:350px;
+}
+.sns_area li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.sns_area li:last-child{
+  margin-right: 0;
 }
