@@ -1,6 +1,12 @@
 /*헤더 css*/
+
 header .header {
-  padding: 31px 0 31px 0;
+  padding: 30px 0 30px 0;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+
 }
 header {
   background-color: #F2E9D8;
@@ -9,7 +15,8 @@ header {
   align-items: center;
 }
 .img_wrap{
-  margin-left: 320px;
+  margin-left: 20vw;
+  /*margin-left: 320px;*/
 }
 
 .header {
@@ -28,7 +35,8 @@ header {
   margin: 0 15px;
 }
 .btn_wrap{
-  margin-right: 350px;
+  /*margin-right: 350px;*/
+  margin-right: 20vw;
 }
 .btn_wrap button {
   border: none;
@@ -36,10 +44,24 @@ header {
   border-radius: 40px;
   color: #FFFFFF;
   padding: 15px 30px;
-  margin-left: 50px;
+}
+/*main_visul css*/
+
+
+
+/*map_section css*/
+.map_section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#map{
+  padding: 0 29px;
+  margin-bottom: 113px;
 }
 
-/*main_visul css*/
+/*footer css*/
 .main_visual{
   background-color:#F2E9D8;
 }
@@ -52,7 +74,7 @@ footer{
 .sns_area{
   list-style: none;
   display: flex;
-  margin-right:350px;
+  margin-right:20vw;
 }
 .sns_area li{
   display: inline-block;
@@ -61,3 +83,4 @@ footer{
 .sns_area li:last-child{
   margin-right: 0;
 }
+
