@@ -1,0 +1,39 @@
+header .header {
+  padding: 31px 0 31px 0;
+}
+header {
+  background-color: #F2E9D8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img_wrap{
+  margin-left: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  margin: 0 15px;
+}
+.btn_wrap{
+  margin-right: 350px;
+}
+.btn_wrap button {
+  border: none;
+  background-color: #D97652;
+  border-radius: 40px;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  margin-left: 50px;
+}
