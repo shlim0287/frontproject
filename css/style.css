@@ -6,6 +6,7 @@
   padding :26px 15%;
 }
 
+main{}
 
 
 /*헤더 css*/
@@ -39,16 +40,15 @@ nav .btn_wrap{
 
 /*main_visul css*/
 .main_visual{
-  background-color: #F2E9D8;
-  padding :0 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #F2E9D8;
+  padding :0 15%;
 }
 
 .main_visual_right > div {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin : 40px 0;
 }
 
 .main_intro{
@@ -63,6 +63,34 @@ nav .btn_wrap{
   font-weight: 400;
 }
 
+/*sub_visual css*/
+
+.sub_visual{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 14%;
+}
+
+
+.sub_visual img{
+  width: 660px;
+  height: 390px;
+  padding-right: 110px;
+}
+
+.sub_intro{
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+.sub_explain{
+  line-height: 1.2;
+  font-size : 16px;
+  font-weight: 400;
+}
 
 /*.main_visual{*/
 /*  background-color:#F2E9D8;*/
