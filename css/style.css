@@ -72,7 +72,6 @@ nav .btn_wrap{
   padding: 80px 14%;
 }
 
-
 .sub_visual img{
   width: 660px;
   height: 390px;
@@ -92,20 +91,28 @@ nav .btn_wrap{
   font-weight: 400;
 }
 
-/*.main_visual{*/
-/*  background-color:#F2E9D8;*/
+/*cat_gallery css*/
+.cat_gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cat_gallery_intro p:first-child{
+  color: #D97652;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.cat_picture_more p{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 28px;
+}
 
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-/*.main_visual_right div{*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  margin-bottom: 40px;*/
-/*  margin-right: 100px;*/
-/*  margin-left: 20vw;*/
-/*}*/
 
 
 /*map_section css*/
