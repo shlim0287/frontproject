@@ -100,12 +100,25 @@
           </div>
           <input type="email" id="email" name="email" placeholder="Enter your e-mail address">
         </label>
-        <button type="submit">Subscribe</button>
+        <button id="openModalBtn" type="button">Subscribe</button>
       </form>
     </section>
     <section class="cat_img">
       <img src="img/cat2.svg" alt="눈이 초롱초롱한 고양이">
     </section>
+    <div id="subs_modal" class="modal">
+      <div class="modal-content">
+<!--        <span class="close" id="closeModalBtn">&times;</span>-->
+        <div class="modal_img_wrap">
+          <img src="img/modal-cat.svg" alt="귀엽고 조그만 고양이 얼굴">
+        </div>
+        <div class="modal_intro">
+          <p>Thank you!</p>
+          <p>이메일을 통해 실시간 유용한 정보를 제공해드릴게요!</p>
+        </div>
+        <button id="closeModalBtn">Enjoy HODU</button>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="img_wrap">
