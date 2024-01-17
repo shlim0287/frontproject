@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HODU</title>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -62,7 +63,6 @@
         <div class="sub_explain">
           <p>HODU에서 그 동안 느껴보지 못한 아름다움을 경험해보세요!!</p>
         </div>
-
       </div>
     </section>
     <section class="cat_gallery">
@@ -87,6 +87,21 @@
       <div id="map"></div>
       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=50964a5929db5e418f68c8c5b0fccbc4"></script>
       <script type="text/javascript" src="js/kakaomap.js"></script>
+    </section>
+    <section class="subs_blog">
+      <div class="subs_blog_explain">
+        <p>Subscribe to our Blog post</p>
+        <p>블로그에 가입하시면 다양한 정보를 공유 받을 수 있습니다!</p>
+      </div>
+      <form class="subs_blog_form" action="#">
+        <label class="email-label" for="email">
+          <div class="icon-container">
+            <img id="emailIcon" src="img/mail.svg" alt="Email Icon">
+          </div>
+          <input type="email" id="email" name="email" placeholder="Enter your e-mail address">
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
     </section>
     <section class="cat_img">
       <img src="img/cat2.svg" alt="눈이 초롱초롱한 고양이">

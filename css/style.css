@@ -169,8 +169,81 @@ nav .btn_wrap{
   margin: 34px 29px 18px 54px;
 }
 
+/*subs_blog css*/
+.subs_blog{
+  background-color: #263140;
+  color: #FFF;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13%;
+  padding: 50px 58px;
+}
+
+.subs_blog_explain{
+  margin-right: 150px;
+}
+
+.subs_blog_explain :first-child{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 16px;
+}
+
+.subs_blog_explain :last-child{
+  font-size: 14px;
+}
+
+.subs_blog_form{
+  position: relative;
+}
+
+.subs_blog_form input{
+  border-radius: 60px;
+  border: none;
+  width: 530px;
+  height: 60px;
+}
+
+.subs_blog_form button {
+  background-color: #D97652;
+  color: #FFF;
+  border-radius: 40px;
+  position: absolute;
+  padding: 15px 29px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5px;
+  margin-right: 6px;
+}
+
+.email-label{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.icon-container{
+  position: absolute;
+  left: 28px;
+}
+
+.email-label input::placeholder{
+  text-indent: 60px;
+}
+
+.email-label input:focus::placeholder {
+  opacity: 0;
+}
 
 
+
+
+
+
+/*cat_img css*/
 
 .cat_img img{
   width: 100%;
