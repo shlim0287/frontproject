@@ -14,46 +14,35 @@ let scrollDown = document.getElementById("scrollDown");
 
 document.addEventListener("DOMContentLoaded", function () {
   if (emailInput && emailIcon) {
-    emailInput.addEventListener("focus", function () {
-      emailIcon.style.display = "none";
-    });
+    emailInput.addEventListener("focus", handleFocus);
 
-    emailInput.addEventListener("blur", function () {
-      if (emailInput.value === "") {
-        emailIcon.style.display = "block";
-      }
-    });
+    emailInput.addEventListener("blur", handleBlur);
   }
-
-  // emailInput.addEventListener("input",function (){
-  //   if(!emailInput.checkValidity()){
-  //     // emailInput.placeholder="Invalid email address";
-  //   }
-  // });
 });
 
-
-
-
-openModalBtn.onclick = function () {
-  if (emailInput.checkValidity())
-    modal.style.display = "block";
-};
-
-closeModalBtn.onclick = function() {
-  modal.style.display = "none";
+function handleFocus (){
+  emailIcon.style.display="none";
 }
-
-window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
+function handleBlur(){
+  if (emailInput.value === "") {
+    emailIcon.style.display = "block";
   }
 }
 
 
+openModalBtn.addEventListener("click",function (){
+  if(emailInput.checkValidity()){
+    modal.style.display="block";
+  }
+})
+
+closeModalBtn.addEventListener("click",function (){
+  modal.style.display="none";
+})
 
 
-window.onscroll = function() { scrollFunction() };
+
+window.addEventListener('scroll', scrollFunction);
 function scrollFunction() {
   if (document.documentElement.scrollTop > 300) {
     scrollTop.classList.add("show");
@@ -63,16 +52,18 @@ function scrollFunction() {
     scrollDown.classList.remove("show");
   }
 }
-scrollTop.onclick=function (){
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
-  });
-};
-scrollDown.onclick=function (){
-  window.scrollTo({
-    top:document.documentElement.scrollHeight,
-    behavior:"smooth"
-  });
-};
 
+
+scrollTop.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+scrollDown.addEventListener('click', function() {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: "smooth"
+  });
+});
