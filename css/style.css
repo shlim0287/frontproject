@@ -274,8 +274,8 @@ nav .btn_wrap{
   padding-top:60px;
   padding-bottom:40px;
   width: 80%;
-  height: 100%; /* 모달 컨텐츠를 중앙에 정렬하기 위해 추가 */
-  margin: auto; /* 모달 컨텐츠를 중앙에 정렬하기 위해 추가 */
+  height: 100%;
+  margin: auto;
 }
 
 .modal_intro :first-child {
@@ -289,8 +289,8 @@ nav .btn_wrap{
 }
 
 .modal_intro {
-  margin-top: 24px; /* Intro와 이미지 사이 공간 24px */
-  margin-bottom: 38px; /* Intro와 Button 사이 공간 38px */
+  margin-top: 24px;
+  margin-bottom: 38px;
 }
 
 .modal-content button {
@@ -300,11 +300,33 @@ nav .btn_wrap{
   border: none;
   color: #FFF;
   text-align: center;
-  font-family: Pretendard;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
 }
+
+/*버튼 상하단 이동버튼 css*/
+
+
+#scrollTopPc {
+  display: none;
+  position: fixed;
+  bottom: 72px;
+  right: 19px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+
+#scrollDownPc {
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 19px;
+  cursor: pointer;
+  z-index: 99;
+}
+
 
 
 
