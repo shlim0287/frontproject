@@ -8,6 +8,8 @@ let closeModalBtn = document.getElementById("closeModalBtn");
 let modal = document.getElementById("subs_modal");
 
 
+let scrollTop = document.getElementById("scrollTop");
+let scrollDown = document.getElementById("scrollDown");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,3 +49,30 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+window.onscroll = function() { scrollFunction() };
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 300) {
+    scrollTop.classList.add("show");
+    scrollDown.classList.add("show");
+  } else {
+    scrollTop.classList.remove("show");
+    scrollDown.classList.remove("show");
+  }
+}
+scrollTop.onclick=function (){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+};
+scrollDown.onclick=function (){
+  window.scrollTo({
+    top:document.documentElement.scrollHeight,
+    behavior:"smooth"
+  });
+};
+
