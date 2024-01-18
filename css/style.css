@@ -85,14 +85,14 @@ nav .btn_wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 14%;
+  padding: 80px 15%;
 }
 
 .sub_visual img{
   border-radius:30px;
-  width: 660px;
-  height: 390px;
-  padding-right: 110px;
+  /*width: 660px;*/
+  /*height: 390px;*/
+  padding-right: 120px;
 }
 
 .sub_intro{
@@ -139,7 +139,7 @@ nav .btn_wrap{
   flex-direction: column;
   align-items: center;
   /*position: relative;*/
-  padding: 0 14.5%;
+  padding: 0 15%;
   /*margin-bottom: 30px;*/
 }
 
@@ -165,9 +165,9 @@ nav .btn_wrap{
 #map{
   border-radius: 10px;
   /*margin-bottom: 113px;*/
-  width: 1100px;
+  width: 100%;
   height: 520px;
-  margin: 34px 29px 18px 54px;
+  /*margin: 34px 29px 18px 54px;*/
 }
 
 /*subs_blog css*/
@@ -179,8 +179,8 @@ nav .btn_wrap{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top:115px;
-  margin: 0 13%;
+  top:100px;
+  margin: 0 15%;
   padding: 50px 58px;
 }
 
@@ -257,10 +257,11 @@ nav .btn_wrap{
 #subs_modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 40px;
+  border: none;
   z-index: 1000;
   width: 600px;
   height: 400px;
@@ -271,6 +272,7 @@ nav .btn_wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none;
   padding-top:60px;
   padding-bottom:40px;
   width: 80%;
@@ -306,11 +308,18 @@ nav .btn_wrap{
 }
 
 /*버튼 상하단 이동버튼 css*/
-
-
-#scrollTopPc {
+#scrollTop,#scrollDown{
   display: none;
   position: fixed;
+  opacity: 0;
+}
+
+#scrollTop.show,#scrollDown.show{
+  display: block;
+  opacity: 1;
+}
+
+#scrollTop {
   bottom: 72px;
   right: 19px;
   cursor: pointer;
@@ -318,31 +327,13 @@ nav .btn_wrap{
 }
 
 
-#scrollDownPc {
-  display: none;
-  position: fixed;
+#scrollDown {
   bottom: 28px;
   right: 19px;
   cursor: pointer;
   z-index: 99;
 }
 
-
-
-
-/*.close {*/
-/*  color: #aaa;*/
-/*  float: right;*/
-/*  font-size: 28px;*/
-/*  font-weight: bold;*/
-/*  cursor: pointer;*/
-/*}*/
-/*.close:hover,*/
-/*.close:focus {*/
-/*  color: black;*/
-/*  text-decoration: none;*/
-/*  cursor: pointer;*/
-/*}*/
 
 /*cat_img css*/
 
