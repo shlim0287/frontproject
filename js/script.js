@@ -15,7 +15,6 @@ let scrollDown = document.getElementById("scrollDown");
 document.addEventListener("DOMContentLoaded", function () {
   if (emailInput && emailIcon) {
     emailInput.addEventListener("focus", handleFocus);
-
     emailInput.addEventListener("blur", handleBlur);
   }
 });
@@ -39,7 +38,6 @@ openModalBtn.addEventListener("click",function (){
 closeModalBtn.addEventListener("click",function (){
   modal.style.display="none";
 })
-
 
 
 window.addEventListener('scroll', scrollFunction);

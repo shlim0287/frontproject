@@ -155,6 +155,9 @@ nav .btn_wrap{
   max-height: 900px;
   overflow-y: auto;
 }
+.cat_img_scroll::-webkit-scrollbar {
+  display: none;
+}
 .img-grid{
   list-style: none;
   display: flex;
@@ -172,12 +175,16 @@ nav .btn_wrap{
   border-radius: 30px;
   width: 378px;
   height: 378px;
-  filter: drop-shadow(10px 6px 6px #c3c3c3);
+  filter: drop-shadow(10px 6px 10px #c3c3c3);
 }
 
 .img-grid li:hover {
   transform: scale(1.1);
 }
+#show_more_btn:hover{
+  transform: scale(1.1);
+}
+
 
 
 
