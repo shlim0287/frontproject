@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HODU</title>
-  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -83,14 +82,15 @@
         <p >호두들을 만나봐요!</p>
         <p>아래 사진들을 스크롤하면 여러 사진들을 볼 수 있어요!</p>
       </div>
-      <div class="cat_pictures"></div>
+      <div class="cat_img_scroll">
+        <ul class="img-grid"></ul>
+      </div>
       <div class="cat_picture_more">
         <p>Continue exploring HODU</p>
         <div class="btn_wrap">
-          <button >show more</button>
+          <button id="show_more_btn">show more</button>
         </div>
       </div>
-
     </section>
     <section class="map_section">
       <div class="map_intro">
@@ -157,5 +157,7 @@
       <img src="img/btn_down_light.png" alt="버튼 하단 이동">
     </div>
   </nav>
+  <script src="js/script.js" defer></script>
+  <script src="js/image-scroll.js" defer></script>
 </body>
 </html>

@@ -1,49 +1,16 @@
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 900;
-  src: url(font/Pretendard-Black.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  src: url(font/Pretendard-ExtraBold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  src: url(font/Pretendard-Bold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  src: url(font/Pretendard-SemiBold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  src: url(font/Pretendard-Medium.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  src: url(font/Pretendard-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: url(font/Pretendard-Light.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 200;
-  src: url(font/Pretendard-ExtraLight.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 100;
-  src: url(font/Pretendard-Thin.woff) format('woff');
-}
 
+/*@font-face {*/
+/*  font-family: "Pretendard";*/
+/*  font-weight: 700;*/
+/*  src: url(font/PretendardGOV-Black.woff) format('woff');*/
+/*}*/
+
+
+/*@font-face {*/
+/*  font-family: "Pretendard";*/
+/*  font-weight: 400;*/
+/*  src: url(font/PretendardGOV-Regular.woff) format('woff');*/
+/*}*/
 
 
 body {
@@ -164,6 +131,10 @@ nav .btn_wrap{
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 88px;
+}
+.cat_gallery_intro{
+  margin-bottom: 88px;
 }
 .cat_gallery_intro p:first-child{
   color: #D97652;
@@ -180,8 +151,33 @@ nav .btn_wrap{
   line-height: 30px;
   padding-bottom: 28px;
 }
+.cat_img_scroll{
+  max-height: 900px;
+  overflow-y: auto;
+}
+.img-grid{
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap;
+  width: 1340px;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+.img-grid li {
+  box-sizing: border-box;
+  margin: 36px 20px 36px 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.img-grid li img{
+  border-radius: 30px;
+  width: 378px;
+  height: 378px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3);
+}
 
-
+.img-grid li:hover {
+  transform: scale(1.1);
+}
 
 
 
@@ -189,10 +185,9 @@ nav .btn_wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*position: relative;*/
   padding: 0 15%;
-  /*margin-bottom: 30px;*/
 }
+
 
 
 
@@ -216,10 +211,8 @@ nav .btn_wrap{
 
 #map{
   border-radius: 10px;
-  /*margin-bottom: 113px;*/
   width: 100%;
   height: 520px;
-  /*margin: 34px 29px 18px 54px;*/
 }
 
 /*subs_blog css*/
