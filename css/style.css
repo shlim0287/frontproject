@@ -277,11 +277,12 @@ nav .btn_wrap{
   background-color: #D97652;
   color: #FFF;
   border-radius: 40px;
+  border:none;
   position: absolute;
   padding: 15px 29px;
   right: 0;
   bottom: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   margin-right: 6px;
 }
 
