@@ -22,6 +22,24 @@ window.addEventListener('scroll', scrollFunction);
 scrollTop.addEventListener('click', handleScrollTop);
 scrollDown.addEventListener('click',handleScrollDown);
 
+
+document.querySelector(".subs_blog_form").addEventListener("submit",handleFormDefault);
+function handleFormDefault(event){
+  event.preventDefault();
+  handleModalDisplay();
+}
+
+function handleModalDisplay() {
+  if (emailInput.checkValidity() && emailInput.value !== "") {
+    modal.style.display = "block";
+
+    emailInput.style.border = "none";
+
+    emailInput.value = "";
+  } else {
+    emailInput.style.border = "2px solid red";
+  }
+}
 function attachEmailInputListeners() {
   if (emailInput && emailIcon) {
     emailInput.addEventListener("focus", handleFocus);
@@ -35,15 +53,6 @@ function handleFocus (){
 function handleBlur(){
   if (emailInput.value === "") {
     emailIcon.style.display = "block";
-  }
-}
-
-
-function handleModalDisplay(){
-  if(emailInput.checkValidity()&&emailInput.value!==""){
-    modal.style.display="block";
-  }else{
-    emailInput.style.border = "2px solid red";
   }
 }
 
