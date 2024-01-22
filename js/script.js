@@ -12,12 +12,22 @@ let scrollTop = document.getElementById("scrollTop");
 let scrollDown = document.getElementById("scrollDown");
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", attachEmailInputListeners);
+
+openModalBtn.addEventListener("click",handleModalDisplay);
+closeModalBtn.addEventListener("click",handleCloseModal);
+
+window.addEventListener('scroll', scrollFunction);
+
+scrollTop.addEventListener('click', handleScrollTop);
+scrollDown.addEventListener('click',handleScrollDown);
+
+function attachEmailInputListeners() {
   if (emailInput && emailIcon) {
     emailInput.addEventListener("focus", handleFocus);
     emailInput.addEventListener("blur", handleBlur);
   }
-});
+}
 
 function handleFocus (){
   emailIcon.style.display="none";
@@ -29,18 +39,20 @@ function handleBlur(){
 }
 
 
-openModalBtn.addEventListener("click",function (){
-  if(emailInput.checkValidity()){
+function handleModalDisplay(){
+  if(emailInput.checkValidity()&&emailInput.value!==""){
     modal.style.display="block";
+  }else{
+    emailInput.style.border = "2px solid red";
   }
-})
+}
 
-closeModalBtn.addEventListener("click",function (){
+
+function handleCloseModal(){
   modal.style.display="none";
-})
+}
 
 
-window.addEventListener('scroll', scrollFunction);
 function scrollFunction() {
   if (document.documentElement.scrollTop > 300) {
     scrollTop.classList.add("show");
@@ -52,16 +64,17 @@ function scrollFunction() {
 }
 
 
-scrollTop.addEventListener('click', function() {
+function handleScrollTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
-});
+}
 
-scrollDown.addEventListener('click', function() {
+
+function handleScrollDown() {
   window.scrollTo({
     top: document.documentElement.scrollHeight,
     behavior: "smooth"
   });
-});
+}

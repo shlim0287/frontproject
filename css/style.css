@@ -268,11 +268,6 @@ nav .btn_wrap{
   border: 2px solid red;
 }
 
-#error-message {
-  color: red;
-  display: none;
-}
-
 .subs_blog_form button {
   background-color: #D97652;
   color: #FFF;
