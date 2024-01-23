@@ -40,78 +40,94 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 let positions = [
   {
     title: '<div>고양이놀이터</div>',
+    url  : '<div><a href="https://map.naver.com/p/search/%EA%B3%A0%EC%96%91%EC%9D%B4%20%EB%86%80%EC%9D%B4%ED%84%B0/place/21617309?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.56202, 126.9856)
   },
   {
-    title: '<div>Skycatcafe the first store</div>',
+    title: '<div>Skycatcafe</div>',
+    url  : '<div><a href="https://map.naver.com/p/search/Skycatcafe?c=15.00,0,0,0,dh">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5635, 126.9841)
   },
   {
     title: '<div>연남동 고양이 카페</div>',
+    url  : '<div><a href="https://map.naver.com/p/search/%EC%97%B0%EB%82%A8%EB%8F%99%20%EA%B3%A0%EC%96%91%EC%9D%B4%20%EC%B9%B4%ED%8E%98?c=15.00,0,0,0,dh">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.558853, 126.924901)
   },
   {
     title: '<div>청춘고양이카페</div>',
+    url  : '<div><a href="https://map.naver.com/p/search/%EC%B2%AD%EC%B6%98%EA%B3%A0%EC%96%91%EC%9D%B4%EC%B9%B4%ED%8E%98/place/33706021?c=15.00,0,0,0,dh&isCorrectAnswer=true">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5588534, 126.9249012)
   }
   ,
   {
     title: '<div>지구별 고양이</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%A7%80%EA%B5%AC%EB%B3%84+%EA%B3%A0%EC%96%91%EC%9D%B4&rlz=1C1JJTC_koKR1051KR1051&oq=%EC%A7%80%EA%B5%AC%EB%B3%84+%EA%B3%A0%EC%96%91%EC%9D%B4&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDyoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.557642, 126.940577)
   }
   ,
   {
     title: '<div>원두볶는 고양이</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%9B%90%EB%91%90%EB%B3%B6%EB%8A%94+%EA%B3%A0%EC%96%91%EC%9D%B4&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=Gz-vZYODJdbc2roP0Lax2Ao&udm=&ved=0ahUKEwjD_Mvl1PKDAxVWrlYBHVBbDKsQ4dUDCBA&uact=5&oq=%EC%9B%90%EB%91%90%EB%B3%B6%EB%8A%94+%EA%B3%A0%EC%96%91%EC%9D%B4&gs_lp=Egxnd3Mtd2l6LXNlcnAiFuybkOuRkOuztuuKlCDqs6DslpHsnbQyAhAmSP8mUMsEWNwTcAF4AJABAJgBrAGgAaMCqgEDMC4yuAEDyAEA-AEC-AEBwgIOEC4YgAQYxwEYrwEYsAPCAggQABiABBiwA8ICCBAAGIAEGKIE4gMEGAEgQYgGAZAGAg&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.6650719, 126.8369961)
   }
   ,
   {
     title: '<div>고양이멀티카페 마오</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A9%80%ED%8B%B0%EC%B9%B4%ED%8E%98+%EB%A7%88%EC%98%A4&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=OD-vZayHKLHk2roP3tWQ6AY&udm=&ved=0ahUKEwisg7nz1PKDAxUxslYBHd4qBG0Q4dUDCBA&uact=5&oq=%EA%B3%A0%EC%96%91%EC%9D%B4%EB%A9%80%ED%8B%B0%EC%B9%B4%ED%8E%98+%EB%A7%88%EC%98%A4&gs_lp=Egxnd3Mtd2l6LXNlcnAiHOqzoOyWkeydtOupgO2LsOy5tO2OmCDrp4jsmKQyCxAuGIAEGMcBGK8BMgIQJkjqX1CsWVisWXABeACQAQCYAYkBoAGJAaoBAzAuMbgBA8gBAPgBAvgBAeIDBBgBIEGIBgE&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5528398, 126.9221232)
   }
   ,
   {
     title: '<div>cafe 고양이 noon</div>',
+    url  : '<div><a href="https://www.google.com/search?q=cafe+%EA%B3%A0%EC%96%91%EC%9D%B4+noon&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=UT-vZbHvLKTf2roP3My_uAw&udm=&ved=0ahUKEwjx27P_1PKDAxWkr1YBHVzmD8cQ4dUDCBA&uact=5&oq=cafe+%EA%B3%A0%EC%96%91%EC%9D%B4+noon&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2NhZmUg6rOg7JaR7J20IG5vb24yAhAmSOMEUABYAHAAeAGQAQCYAYkBoAGJAaoBAzAuMbgBA8gBAPgBAvgBAeIDBBgAIEE&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.6010534, 126.9566015)
   }
   ,
   {
     title: '<div>금고양이 좌식카페</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EA%B8%88%EA%B3%A0%EC%96%91%EC%9D%B4+%EC%A2%8C%EC%8B%9D%EC%B9%B4%ED%8E%98&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=Xj-vZYW2KePg2roPtKyz6A0&udm=&ved=0ahUKEwiF3cmF1fKDAxVjsFYBHTTWDN0Q4dUDCBA&uact=5&oq=%EA%B8%88%EA%B3%A0%EC%96%91%EC%9D%B4+%EC%A2%8C%EC%8B%9D%EC%B9%B4%ED%8E%98&gs_lp=Egxnd3Mtd2l6LXNlcnAiGeq4iOqzoOyWkeydtCDsoozsi53subTtjpgyAhAmSOsHUABYAHAAeACQAQCYAXigAXiqAQMwLjG4AQPIAQD4AQL4AQHiAwQYACBB&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.58334139999999, 127.000945)
   }
   ,
   {
     title: '<div>집사의하루 홍대점</div>',
+    url  : '<div><a href="">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5520331 , 126.9226558)
   }
   ,
   {
     title: '<div>고양이라 좋은 날</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%A7%91%EC%82%AC%EC%9D%98%ED%95%98%EB%A3%A8+%ED%99%8D%EB%8C%80%EC%A0%90&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=aT-vZf3qNabi2roPrsqLgAk&udm=&ved=0ahUKEwi9w_WK1fKDAxUmsVYBHS7lApAQ4dUDCBA&uact=5&oq=%EC%A7%91%EC%82%AC%EC%9D%98%ED%95%98%EB%A3%A8+%ED%99%8D%EB%8C%80%EC%A0%90&gs_lp=Egxnd3Mtd2l6LXNlcnAiGeynkeyCrOydmO2VmOujqCDtmY3rjIDsoJAyCxAuGIAEGMcBGK8BMgIQJjIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFIggpQAFgAcAB4AJABAJgBigGgAYoBqgEDMC4xuAEDyAEA-AEC-AEB4gMEGAAgQboGBggBEAEYFA&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5008484, 127.0286708)
   }
   ,
   {
     title: '<div>카페 하룻고양이</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%B9%B4%ED%8E%98+%ED%95%98%EB%A3%BB%EA%B3%A0%EC%96%91%EC%9D%B4&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=ez-vZcKbI5Hg2roPtpmSQA&udm=&ved=0ahUKEwiCxa2T1fKDAxURsFYBHbaMBAgQ4dUDCBA&uact=5&oq=%EC%B9%B4%ED%8E%98+%ED%95%98%EB%A3%BB%EA%B3%A0%EC%96%91%EC%9D%B4&gs_lp=Egxnd3Mtd2l6LXNlcnAiFuy5tO2OmCDtlZjro7vqs6DslpHsnbQyBBAAGB4yCBAAGAgYHhgPMgIQJkiuB1AAWABwAHgBkAEAmAGAAaABgAGqAQMwLjG4AQPIAQD4AQL4AQHiAwQYACBB&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng( 37.5806247, 127.02506)
   }
   ,
   {
     title: '<div>캠핑고양이카페</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%BA%A0%ED%95%91%EA%B3%A0%EC%96%91%EC%9D%B4%EC%B9%B4%ED%8E%98&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=hz-vZc_5L9Dp2roP5uessAc&udm=&ved=0ahUKEwiP2ZaZ1fKDAxXQtFYBHeYzC3YQ4dUDCBA&uact=5&oq=%EC%BA%A0%ED%95%91%EA%B3%A0%EC%96%91%EC%9D%B4%EC%B9%B4%ED%8E%98&gs_lp=Egxnd3Mtd2l6LXNlcnAiFey6oO2VkeqzoOyWkeydtOy5tO2OmDILEC4YgAQYxwEYrwEyBRAAGIAEMgIQJjIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFIywhQAFgAcAB4AZABAJgBigGgAYoBqgEDMC4xuAEDyAEA-AEC-AEB4gMEGAAgQboGBggBEAEYFA&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.502459, 127.0502604)
   }
   ,
   {
     title: '<div>고양이별캣카페</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B3%84%EC%BA%A3%EC%B9%B4%ED%8E%98&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=lj-vZbT3FJTP2roPxcamkAE&udm=&ved=0ahUKEwi0mo-g1fKDAxWUp1YBHUWjCRIQ4dUDCBA&uact=5&oq=%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B3%84%EC%BA%A3%EC%B9%B4%ED%8E%98&gs_lp=Egxnd3Mtd2l6LXNlcnAiFeqzoOyWkeydtOuzhOy6o-y5tO2OmDILEC4YgAQYxwEYrwEyAhAmMhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAUjUBVAAWABwAHgAkAEAmAGPAaABjwGqAQMwLjG4AQPIAQD4AQL4AQHiAwQYACBBugYGCAEQARgU&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5604152 , 126.8383811)
   }
   ,
   {
     title: '<div>더귀여워</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EB%8D%94%EA%B7%80%EC%97%AC%EC%9B%8C&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=oD-vZfXSC4Pn2roP09CIkAM&udm=&ved=0ahUKEwj1ouik1fKDAxWDs1YBHVMoAjIQ4dUDCBA&uact=5&oq=%EB%8D%94%EA%B7%80%EC%97%AC%EC%9B%8C&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOuNlOq3gOyXrOybjDILEC4YgAQYxwEYrwEyBRAAGIAEMgQQABgeMgYQABgFGB4yAhAmMhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAUi5B1AAWABwAHgBkAEAmAGPAaABjwGqAQMwLjG4AQPIAQD4AQL4AQHiAwQYACBBugYGCAEQARgU&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.54896189999999 , 126.9208636)
   }
   ,
   {
     title: '<div>카페모로</div>',
+    url  : '<div><a href="https://www.google.com/search?q=%EC%B9%B4%ED%8E%98%EB%AA%A8%EB%A1%9C&sca_esv=600640614&rlz=1C1JJTC_koKR1051KR1051&ei=qz-vZY_NE6Dl2roPz9Wd6AY&udm=&ved=0ahUKEwjPzo-q1fKDAxWgslYBHc9qB20Q4dUDCBA&uact=5&oq=%EC%B9%B4%ED%8E%98%EB%AA%A8%EB%A1%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOy5tO2OmOuqqOuhnDICECYyAhAmSNkFUABYAHAAeAGQAQCYAY8BoAGPAaoBAzAuMbgBA8gBAPgBAvgBAeIDBBgAIEE&sclient=gws-wiz-serp">상세정보</a></div>',
     latlng: new kakao.maps.LatLng(37.5621928, 126.9259081)
   }
 ];
@@ -136,28 +152,38 @@ for (var i = 0; i < positions.length; i++) {
     map: map, // 마커를 표시할 지도
     position: positions[i].latlng, // 마커를 표시할 위치
     title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-    image: markerImage // 마커 이미지
+    url: positions[i].url,
+    image: markerImage,
+    clickable:true// 마커 이미지
   });
-
+  var iwRemoveable=true;
   // 마커에 표시할 인포윈도우를 생성합니다
   var infowindow = new kakao.maps.InfoWindow({
-    content: positions[i].title // 인포윈도우에 표시할 내용
+    content: positions[i].title + positions[i].url,// 인포윈도우에 표시할 내용
+    removable:iwRemoveable
   });
-
-  kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
-  kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+  kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
 }
 
-function makeOverListener(map, marker, infowindow) {
+
+// 클릭 이벤트를 처리하는 함수를 생성합니다
+function makeClickListener(map, marker, infowindow) {
   return function() {
     infowindow.open(map, marker);
   };
 }
 
-// 인포윈도우를 닫는 클로저를 만드는 함수입니다
-function makeOutListener(infowindow) {
-  return function() {
-    infowindow.close();
-  };
-}
+//
+// function makeOverListener(map, marker, infowindow) {
+//   return function() {
+//     infowindow.open(map, marker);
+//   };
+// }
+//
+// // 인포윈도우를 닫는 클로저를 만드는 함수입니다
+// function makeOutListener(infowindow) {
+//   return function() {
+//     infowindow.close();
+//   };
+// }
 
