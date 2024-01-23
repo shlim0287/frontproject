@@ -1,17 +1,18 @@
 
-/*@font-face {*/
-/*  font-family: "Pretendard";*/
-/*  font-weight: 700;*/
-/*  src: url(font/PretendardGOV-Black.woff) format('woff');*/
-/*}*/
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 
-/*@font-face {*/
-/*  font-family: "Pretendard";*/
-/*  font-weight: 400;*/
-/*  src: url(font/PretendardGOV-Regular.woff) format('woff');*/
-/*}*/
-
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   /*이부분 커밋*/
@@ -33,7 +34,7 @@ body {
 
 
 
-main{}
+
 
 
 
@@ -69,6 +70,8 @@ nav .btn_wrap{
   color: #FFFFFF;
   padding: 15px 30px;
 }
+
+
 
 /*main_visul css*/
 .main_visual{
@@ -106,8 +109,7 @@ nav .btn_wrap{
 
 .sub_visual img{
   border-radius:30px;
-  /*width: 660px;*/
-  /*height: 390px;*/
+
   padding-right: 120px;
 }
 
@@ -123,6 +125,11 @@ nav .btn_wrap{
   font-family: Pretendard,sans-serif;
   font-size : 16px;
   font-weight: 400;
+}
+
+#openModalBtn:hover{
+  background-color: coral;
+  cursor: pointer;
 }
 
 /*cat_gallery css*/
@@ -395,11 +402,13 @@ nav .btn_wrap{
 
 /*cat_img css*/
 
+
+/*footer css*/
+
 .cat_img img{
   width: 100%;
 }
 
-/*footer css*/
 .sns_area{
   display: flex;
 }
