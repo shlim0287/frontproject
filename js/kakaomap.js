@@ -146,6 +146,14 @@ for (var i = 0; i < positions.length; i++) {
     removable:iwRemoveable
   });
   kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
+  kakao.maps.event.addListener(marker, 'mouseover', function() {
+    // 마커 크기를 조절하여 효과를 줍니다
+    marker.setImage(new kakao.maps.MarkerImage(imageSrc, new kakao.maps.Size(30, 44)));
+  });
+  kakao.maps.event.addListener(marker, 'mouseout', function() {
+    // 마커 크기를 원래대로 되돌립니다
+    marker.setImage(new kakao.maps.MarkerImage(imageSrc, imageSize));
+  });
 }
 
 
@@ -155,18 +163,4 @@ function makeClickListener(map, marker, infowindow) {
     infowindow.open(map, marker);
   };
 }
-
-//
-// function makeOverListener(map, marker, infowindow) {
-//   return function() {
-//     infowindow.open(map, marker);
-//   };
-// }
-//
-// // 인포윈도우를 닫는 클로저를 만드는 함수입니다
-// function makeOutListener(infowindow) {
-//   return function() {
-//     infowindow.close();
-//   };
-// }
 
