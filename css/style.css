@@ -382,6 +382,7 @@ nav .btn_wrap{
 #scrollTop.show,#scrollDown.show{
   display: block;
   opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #scrollTop {
@@ -399,15 +400,18 @@ nav .btn_wrap{
   z-index: 99;
 }
 
+#scrollTop:hover,#scrollDown:hover{
+  opacity: 0.6;
+}
+
 
 /*cat_img css*/
-
-
-/*footer css*/
 
 .cat_img img{
   width: 100%;
 }
+
+/*footer css*/
 
 .sns_area{
   display: flex;
