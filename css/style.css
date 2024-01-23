@@ -236,6 +236,16 @@ nav .btn_wrap{
   height: 520px;
 }
 
+.infowindow{
+  font-family: Pretendard;
+  font-size: 15px;
+  transition: box-shadow 0.3s ease;
+}
+.infowindow:last-child:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
 /*subs_blog css*/
 .subs_blog{
   background-color: #263140;
@@ -276,6 +286,7 @@ nav .btn_wrap{
   width: 530px;
   height: 60px;
 }
+
 
 /* 에러 메시지 스타일링 */
 #email:invalid {

@@ -27,6 +27,7 @@ document.querySelector(".subs_blog_form").addEventListener("submit", handleFormD
 
 document.getElementById("supportLink").addEventListener("click",scrollToFooter);
 
+
 function scrollToFooter(){
   document.querySelector(".footer").scrollIntoView({behavior:"smooth"});
 }
