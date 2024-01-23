@@ -23,7 +23,13 @@ scrollTop.addEventListener('click', handleScrollTop);
 scrollDown.addEventListener('click',handleScrollDown);
 
 
-document.querySelector(".subs_blog_form").addEventListener("submit",handleFormDefault);
+document.querySelector(".subs_blog_form").addEventListener("submit", handleFormDefault);
+
+document.getElementById("supportLink").addEventListener("click",scrollToFooter);
+
+function scrollToFooter(){
+  document.querySelector(".footer").scrollIntoView({behavior:"smooth"});
+}
 function handleFormDefault(event){
   event.preventDefault();
   handleModalDisplay();
