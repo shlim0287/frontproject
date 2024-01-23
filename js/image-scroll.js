@@ -21,6 +21,7 @@ document.getElementById('show_more_btn').addEventListener('click', () => {
 
 imageList.addEventListener("scroll", handleScroll);
 
+
 fetchImages(pageToFetch);
 
 
@@ -53,6 +54,7 @@ function makeImageList(datas) {
   datas.forEach((item) => {
     const li = document.createElement('li');
     li.innerHTML = `<img src=${item.download_url} alt=''>`;
+
     imageList.appendChild(li);
   });
 }
